@@ -77,4 +77,8 @@ benchmark.onFinish = function (fn) {
   _onFinish = fn
 }
 
+benchmark.iterations = function (_iterations) {
+  NUM_OF_ITERATIONS = _iterations
+}
+
 module.exports = benchmark
