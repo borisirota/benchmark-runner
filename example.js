@@ -1,5 +1,8 @@
 var benchmark = require('.');
 
+benchmark.onFinish(function () { console.log('FINISH'); })
+benchmark.iterations(10)
+
 benchmark('RegExp#test', function() {
   /o/.test('Hello World!');
 });
