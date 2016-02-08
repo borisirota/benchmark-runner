@@ -1,0 +1,36 @@
+{
+  "name": "benchmark-runner",
+  "version": "1.0.0",
+  "description": "benchmark runner for node, browser and web worker",
+  "main": "index.js",
+  "scripts": {
+    "example": "browserify example.js | browser-run --browser=chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borisirota/benchmark-runner.git"
+  },
+  "keywords": [
+    "benchmark",
+    "runner",
+    "node",
+    "browser",
+    "webworker",
+    "worker"
+  ],
+  "author": "Boris Sirota <borisirota@gmail.com> (https://github.com/borisirota)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borisirota/benchmark-runner/issues"
+  },
+  "homepage": "https://github.com/borisirota/benchmark-runner",
+  "dependencies": {
+    "detect-node": "^2.0.3",
+    "detect-webworker": "^1.0.0",
+    "performance-now": "^0.2.0"
+  },
+  "devDependencies": {
+    "browser-run": "^3.0.8",
+    "browserify": "^13.0.0"
+  }
+}
