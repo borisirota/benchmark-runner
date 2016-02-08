@@ -1,6 +1,6 @@
 {
   "name": "benchmark-runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "benchmark runner for node, browser and web worker",
   "main": "index.js",
   "scripts": {

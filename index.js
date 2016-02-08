@@ -66,13 +66,15 @@ function run () {
   })
 }
 
-module.exports.onFinish = function (fn) {
-  _onFinish = fn
-}
-
-module.exports = function (name, fn) {
+var benchmark = function (name, fn) {
   runs.push([name, fn])
   if (isRunning) return
   clearTimeout(timeoutCanceler)
   timeoutCanceler = setTimeout(run, 1000)
 }
+
+benchmark.onFinish = function (fn) {
+  _onFinish = fn
+}
+
+module.exports = benchmark
